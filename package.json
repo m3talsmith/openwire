@@ -1,0 +1,25 @@
+{
+  "name": "openwire",
+  "version": "0.0.0",
+  "description": "A wireframing platform using socket.io and angularjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rebelhold/openwire.git"
+  },
+  "keywords": [
+    "wireframe",
+    "platform",
+    "socket.io"
+  ],
+  "author": "Michael Christenson II <m3talsmith@rebelhold.com>",
+  "contributors": ["David Fuka <graveto@rebelhold.com>", "Brett Byler <bbyler@rebelhold.com>"],
+  "license": "GPL-3+",
+  "bugs": {
+    "url": "https://github.com/rebelhold/openwire/issues"
+  },
+  "homepage": "https://github.com/rebelhold/openwire"
+}
