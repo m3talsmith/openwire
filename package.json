@@ -16,10 +16,25 @@
     "socket.io"
   ],
   "author": "Michael Christenson II <m3talsmith@rebelhold.com>",
-  "contributors": ["David Fuka <graveto@rebelhold.com>", "Brett Byler <bbyler@rebelhold.com>"],
+  "contributors": [
+    "David Fuka <graveto@rebelhold.com>",
+    "Brett Byler <bbyler@rebelhold.com>"
+  ],
   "license": "GPL-3+",
   "bugs": {
     "url": "https://github.com/rebelhold/openwire/issues"
   },
-  "homepage": "https://github.com/rebelhold/openwire"
+  "homepage": "https://github.com/rebelhold/openwire",
+  "dependencies": {
+    "mocha-istanbul": "~0.2.0",
+    "mocha-lcov-reporter": "0.0.1",
+    "chai": "~1.9.0",
+    "mocha": "~1.17.1",
+    "istanbul": "~0.2.4",
+    "coveralls": "~2.7.1",
+    "nodemon": "~1.0.14",
+    "connect": "~2.12.0",
+    "pageres": "~0.1.4",
+    "socket.io": "~0.9.16"
+  }
 }
