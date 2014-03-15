@@ -5,24 +5,40 @@ var chai      = require('chai'),
 describe('WorkSpace', function () {
   describe('#new', function () {
     var workspace;
-    beforeEach(function () {
-      workspace = new Workspace();
-    });
 
-    it('does not have an id');
-    it('does not have a timestamp');
-    it('does not have a name');
-    it('does not have a token');
     describe('#save', function () {
-      it('has an id');
-      it('has a timestamp');
-      it('has a name');
-      it('has a token');
-      describe('#update', function () {
-        it('changes the name');
+      beforeEach(function () {
+        workspace = new Workspace();
       });
-      describe('#destroy', function () {
-        it('destroys the workspace');
+
+
+      afterEach(function () {
+        workspace.destroy();
+      });
+
+      it('gets an id', function () {
+        assert(!workspace.id);
+        workspace.save();
+        assert(workspace.id);
+      });
+
+      it('has a timestamp', function () {
+        assert(!workspace.timestamp);
+        workspace.save();
+        assert(workspace.timestamp);
+      });
+
+      it('has a token', function () {
+        assert(!workspace.token);
+        workspace.save();
+        assert(workspace.token);
+      });
+
+      it('has a name', function () {
+        assert(!workspace.name);
+        workspace.save();
+        assert(workspace.name);
+        assert_equal(workspace.token, workspace.name);
       });
     });
   });

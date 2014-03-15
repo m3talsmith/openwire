@@ -23,7 +23,7 @@
     "David Fuka <graveto@rebelhold.com>",
     "Brett Byler <bbyler@rebelhold.com>"
   ],
-  "license": "GPL-3+",
+  "license": "GPL-3.0+",
   "bugs": {
     "url": "https://github.com/rebelhold/openwire/issues"
   },
@@ -38,6 +38,7 @@
     "nodemon": "~1.0.14",
     "connect": "~2.12.0",
     "pageres": "~0.1.4",
-    "socket.io": "~0.9.16"
+    "socket.io": "~0.9.16",
+    "mongoose": "~3.8.7"
   }
 }
